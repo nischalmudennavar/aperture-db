@@ -14,7 +14,7 @@ The project rejects traditional relational databases in favor of a static, compi
 
 ## 🛠️ Technical Stack
 - **Runtime**: [Bun](https://bun.sh/) (Selected for extreme performance in I/O and compilation).
-- **Type System**: [TypeScript](https://www.typescriptlang.org/) (Strict mode enabled).
+- **Type System**: [TypeScript](https://www.typescriptlang.org/) (Strict mode enabled, NodeNext module resolution).
 - **Validation**: [Zod](https://zod.dev/) (Used for schema enforcement and type inference).
 - **Workspace**: NPM Workspaces (Mono-repo structure).
 - **CI/CD**: GitHub Actions (Automated compilation and deployment on PR).
@@ -34,6 +34,11 @@ The compiler doesn't just copy files; it enhances them.
 To reduce manual data entry errors, the compiler derives missing physical properties:
 - **Pixel Pitch (µm)**: Calculated using `(Sensor Width (mm) / Horizontal Resolution) * 1000`.
 - **Validation Logic**: A camera cannot be compiled if its sensor height is greater than its width (Landscape constraint) or if weights are negative.
+
+### Development Standards
+- **Testing**: Bun's native test runner (`bun test`) is used for unit testing schemas and compiler logic.
+- **Build Hygiene**: Test files (`*.test.ts`) are excluded from the `tsc` build to keep `dist` clean.
+- **ESM Compliance**: Due to `NodeNext` module resolution, relative imports in TypeScript must include the `.js` extension (e.g., `import { Foo } from "./foo.js"`).
 
 ## 🌐 API Design (v1)
 The API is designed to be REST-compliant but statically served.

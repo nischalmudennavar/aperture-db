@@ -11,8 +11,9 @@
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
+    "@types/bun": "^1.3.9",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "zod": "^3.0.0"

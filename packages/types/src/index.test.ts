@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { CameraSchema } from "./index";
+import { CameraSchema } from "./index.js";
 
 describe("CameraSchema", () => {
   it("validates a correct camera object", () => {
