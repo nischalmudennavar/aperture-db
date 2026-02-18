@@ -31,11 +31,14 @@ npm run build
 
 ## 📖 API Reference (v1)
 
-The API is served as static JSON files. All endpoints are relative to the deployment root.
+The API is automatically deployed to GitHub Pages on every push to `main`.
+
+- **Base URL**: `https://<your-username>.github.io/aperture-db/api/v1/`
 
 ### 1. Discovery Index
 Returns an array of all available camera IDs.
-- **Endpoint**: `/api/v1/index.json`
+- **Endpoint**: `/index.json`
+- **Example**: `https://<your-username>.github.io/aperture-db/api/v1/index.json`
 - **Format**: 
   ```json
   {
@@ -47,8 +50,8 @@ Returns an array of all available camera IDs.
 
 ### 2. Camera Details
 Returns full specifications for a specific camera.
-- **Endpoint**: `/api/v1/cameras/{id}.json`
-- **Example**: `/api/v1/cameras/sony-a7iv.json`
+- **Endpoint**: `/cameras/{id}.json`
+- **Example**: `https://<your-username>.github.io/aperture-db/api/v1/cameras/sony-a7iv.json`
 - **Schema Highlights**:
   - `pixel_pitch_um`: Automatically derived if not provided in source.
   - `sensor`: Includes physical dimensions in mm and pixel resolution.
