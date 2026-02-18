@@ -32,6 +32,8 @@ jobs:
 
     - name: Run Compiler
       run: npm start --workspace=@aperturedb/compiler
+      env:
+        NODE_ENV: production
 
     - name: Check Artifacts
       run: |

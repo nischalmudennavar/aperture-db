@@ -39,6 +39,7 @@ To reduce manual data entry errors, the compiler derives missing physical proper
 - **Testing**: Bun's native test runner (`bun test`) is used for unit testing schemas and compiler logic.
 - **Build Hygiene**: Test files (`*.test.ts`) are excluded from the `tsc` build to keep `dist` clean.
 - **ESM Compliance**: Due to `NodeNext` module resolution, relative imports in TypeScript must include the `.js` extension (e.g., `import { Foo } from "./foo.js"`).
+- **Compiler behavior**: The compiler in `apps/compiler` runs once by default. The dev server only starts if `NODE_ENV` is set to `development`.
 
 ## 🌐 API Design (v1)
 The API is designed to be REST-compliant but statically served.

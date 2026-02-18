@@ -65,7 +65,8 @@ async function compile() {
 await compile();
 
 // If running in Bun, we can also start a simple static file server for dev
-if (process.env.NODE_ENV !== 'production') {
+// We only do this if explicitly asked or in non-CI environments
+if (process.env.NODE_ENV === 'development') {
   const PORT = 3000;
   console.log(`🌐 Dev server running at http://localhost:${PORT}`);
   
