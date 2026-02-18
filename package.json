@@ -1,0 +1,19 @@
+{
+  "name": "aperture-db",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "bun run build --workspaces",
+    "dev": "bun --watch apps/compiler/src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.0.0"
+  }
+}

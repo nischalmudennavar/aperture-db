@@ -1,0 +1,14 @@
+{
+  "name": "@aperturedb/compiler",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist"
+  },
+  "dependencies": {
+    "@aperturedb/types": "*"
+  }
+}

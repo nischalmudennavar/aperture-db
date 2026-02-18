@@ -1,0 +1,33 @@
+name: Compile Static API
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build Types
+      run: npm run build --workspace=@aperturedb/types
+
+    - name: Run Compiler
+      run: npm start --workspace=@aperturedb/compiler
+
+    - name: Check Artifacts
+      run: |
+        ls -R dist/
