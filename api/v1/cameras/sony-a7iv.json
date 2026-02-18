@@ -1,0 +1,14 @@
+{
+  "id": "sony-a7iv",
+  "brand": "Sony",
+  "model": "A7 IV",
+  "sensor": {
+    "width_mm": 35.9,
+    "height_mm": 23.9,
+    "resolution_px_width": 7008,
+    "resolution_px_height": 4672,
+    "pixel_pitch_um": 5.122716894977169
+  },
+  "mount": "Sony E",
+  "weight_g": 658
+}
