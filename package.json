@@ -6,8 +6,9 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "bun run build --workspaces",
-    "dev": "bun --watch apps/compiler/src/index.ts"
+    "build": "npm run build --workspaces",
+    "dev": "bun --watch apps/compiler/src/index.ts",
+    "test": "npm run test --workspaces"
   },
   "devDependencies": {
     "typescript": "^5.0.0",

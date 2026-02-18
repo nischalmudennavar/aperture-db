@@ -14,7 +14,8 @@ ApertureDB is an open-source, edge-native static API providing hardware specific
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 20+
+- **Bun 1.1+** (Primary runtime and task runner)
+- Node.js 20+ (Optional, for npm compatibility)
 - npm 9+
 
 ### Installation
@@ -23,7 +24,7 @@ npm install
 ```
 
 ### Build the API
-This command validates the data, runs the compiler, and generates the `dist` folder.
+This command validates the data, runs the compiler, and generates the `dist` folder. It uses Bun internally for high-performance processing.
 ```bash
 npm run build
 ```

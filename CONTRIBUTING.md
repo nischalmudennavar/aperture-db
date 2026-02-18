@@ -67,7 +67,7 @@ Our CI/CD pipeline enforces strict rules. Your PR will fail if:
 1. **Fork** the repository.
 2. **Create a branch** for your hardware entry (`data/add-fujifilm-x100vi`).
 3. **Commit** your JSON file.
-4. **Verify** locally using `npm run build`.
+4. **Verify** locally using `npm run build` and `npm test`.
 5. **Open a Pull Request**.
 
 ## 📜 Code of Conduct
