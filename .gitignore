@@ -1,3 +1,6 @@
 node_modules
 .gemini
 .env
+context.md
+Gemini.md
+Gemini-Context.md

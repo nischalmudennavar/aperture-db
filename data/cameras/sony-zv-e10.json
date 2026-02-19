@@ -1,0 +1,48 @@
+{
+  "id": "sony-zv-e10",
+  "brand": "Sony",
+  "model": "ZV-E10",
+  "hardware": {
+    "mount": "Sony E",
+    "weight_g": 343,
+    "dimensions": {
+      "width": 115.2,
+      "height": 64.2,
+      "depth": 44.8
+    },
+    "material": "Polycarbonate",
+    "weather_sealed": false,
+    "storage_slots": ["SDXC UHS-I"]
+  },
+  "sensor": {
+    "format": "APS-C",
+    "resolution_mp": 24.2,
+    "width_px": 6000,
+    "height_px": 4000,
+    "physical_width_mm": 23.5,
+    "physical_height_mm": 15.6
+  },
+  "exposure": {
+    "iso_native": {
+      "min": 100,
+      "max": 32000
+    },
+    "iso_expanded": {
+      "min": 50,
+      "max": 51200
+    },
+    "shutter_mechanical": {
+      "min_seconds": 30,
+      "max_denominator": 4000
+    },
+    "shutter_electronic": {
+      "min_seconds": 30,
+      "max_denominator": 4000
+    },
+    "max_continuous_fps": 11
+  },
+  "connectivity": {
+    "ports": ["USB-C 3.2", "Micro HDMI", "3.5mm Mic", "3.5mm Headphone"],
+    "video_max_resolution": "4K 30p"
+  }
+}
