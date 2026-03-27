@@ -1,14 +1,1 @@
-{
-  "id": "sony-a7iv",
-  "brand": "Sony",
-  "model": "A7 IV",
-  "sensor": {
-    "width_mm": 35.9,
-    "height_mm": 23.9,
-    "resolution_px_width": 7008,
-    "resolution_px_height": 4672,
-    "pixel_pitch_um": 5.122716894977169
-  },
-  "mount": "Sony E",
-  "weight_g": 658
-}
+{"id":"sony-a7iv","brand":"Sony","model":"A7 IV","hardware":{"mount":"Sony E","weight_g":658,"dimensions":{"width":131.3,"height":96.4,"depth":79.8},"material":"Magnesium Alloy","weather_sealed":true,"storage_slots":["SDXC UHS-II","CFexpress Type A"]},"sensor":{"format":"Full Frame","resolution_mp":33,"width_px":7008,"height_px":4672,"physical_width_mm":35.9,"physical_height_mm":23.9,"pixel_pitch_um":5.122716894977169,"diagonal_mm":43.127949174520225},"exposure":{"iso_native":{"min":100,"max":51200},"iso_expanded":{"min":50,"max":204800},"shutter_mechanical":{"min_seconds":30,"max_denominator":8000},"shutter_electronic":{"min_seconds":30,"max_denominator":8000},"max_continuous_fps":10},"connectivity":{"ports":["USB-C 3.2","Full HDMI","3.5mm Mic","3.5mm Headphone"],"video_max_resolution":"4K 60p"}}
